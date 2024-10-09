@@ -8,20 +8,149 @@
 </head>
 <body>
   <section>
-    <div class="container">
-        <div class="mt-8">
-            <div>
+    <div class="container overflow-hidden">
+        <div class="mt-8 flex justify-between">
+            <div class="basis-8/12">
                 <div class="flex justify-between">
                     <h4 class="text-2xl font-semibold">Product List</h4>
-<div class="relative"><i class="fa-solid fa-basket-shopping  text-3xl"></i>
-<div class="absolute top-4 left-6 bg-red-600 w-[40] h-[40] text-center flex justify-center items-center  rounded-full">
+<div class="relative cursor-pointer" id="basket"><i class="fa-solid fa-basket-shopping  text-3xl"></i>
+<div class="absolute top-[18px] left-6 bg-red-600 w-[22px] h-[22px] text-center flex justify-center items-center  rounded-full">
     <span class="pb-1  text-white">0</span>
 </div></div>
                 </div>
+                <div class="flex flex-wrap mt-8" id="cardBox">
+
+                </div>
             </div>
-            <div></div>
+            <div id="shoppingCard" class="basis-3/12 bg-gray-700 p-4 translate-x-[400px] transition-all duration-500">
+            <div class="flex flex-col justify-between h-full ">
+             <div>
+                <div >
+                    <h5 class="text-2xl text-white mb-6 font-semibold">Shopping Cart</h5>
+                </div>
+                <div class="flex flex-col gap-5">
+<div class="flex items-center justify-between">
+    <img class="w-[50px] h-[50px]" src="https://www.freeiconspng.com/thumbs/chair-png/aesthetic-chair-png-5.png"alt="">
+    <p class="text-white text-xl">Lounge chair</p>
+    <p class="text-white text-xl">$ 200</p>
+    <div class="flex justify-center items-center text-white text-xl">
+        <button class=" cursor-pointer bg-white rounded-full w-[20px] h-[20px] flex justify-center items-center"><i class="fa-solid fa-chevron-left text-gray-700 text-sm"></i></button>
+        <span class=" mx-3">3</span>
+        <button class="cursor-pointer bg-white rounded-full w-[20px] h-[20px] flex justify-center items-center"><i class="fa-solid fa-angle-right text-gray-800"></i></button>
+    </div>
+</div >
+<div class="flex items-center justify-between">
+    <img class="w-[50px] h-[50px]" src="https://www.freeiconspng.com/thumbs/chair-png/aesthetic-chair-png-5.png"alt="">
+    <p class="text-white text-xl">Lounge chair</p>
+    <p class="text-white text-xl">$ 200</p>
+    <div class="flex justify-center items-center text-white text-xl">
+        <button class="cursor-pointer bg-white rounded-full w-[20px] h-[20px] flex justify-center items-center"><i class="fa-solid fa-chevron-left text-gray-700 text-sm"></i></button>
+        <span class=" mx-3">3</span>
+        <button class="cursor-pointer bg-white rounded-full w-[20px] h-[20px] flex justify-center items-center"><i class="fa-solid fa-angle-right text-gray-800"></i></button>
+    </div>
+</div>
+<div class="flex items-center justify-between">
+    <img class="w-[50px] h-[50px]" src="https://www.freeiconspng.com/thumbs/chair-png/aesthetic-chair-png-5.png"alt="">
+    <p class="text-white text-xl">Lounge chair</p>
+    <p class="text-white text-xl">$ 200</p>
+    <div class="flex justify-center items-center text-white text-xl">
+        <button class="cursor-pointerbg-white rounded-full w-[20px] h-[20px] flex justify-center items-center"><i class="fa-solid fa-chevron-left text-gray-700 text-sm"></i></button>
+        <span class=" mx-3">3</span>
+        <button class="cursor-pointer bg-white rounded-full w-[20px] h-[20px] flex justify-center items-center"><i class="fa-solid fa-angle-right text-gray-800"></i></button>
+    </div>
+</div>
+<div class="flex items-center justify-between">
+    <img class="w-[50px] h-[50px]" src="https://www.freeiconspng.com/thumbs/chair-png/aesthetic-chair-png-5.png"alt="">
+    <p class="text-white text-xl">Lounge chair</p>
+    <p class="text-white text-xl">$ 200</p>
+    <div class="flex justify-center items-center text-white text-xl">
+        <button class="cursor-pointer bg-white rounded-full w-[20px] h-[20px] flex justify-center items-center"><i class="fa-solid fa-chevron-left text-gray-700 text-sm"></i></button>
+        <span class=" mx-3">3</span>
+        <button class="cursor-pointer bg-white rounded-full w-[20px] h-[20px] flex justify-center items-center"><i class="fa-solid fa-angle-right text-gray-800"></i></button>
+    </div>
+</div>
+                </div>
+            </div>
+                <div class="flex justify-between cursor-pointer">
+                    <button class="bg-gray-400 w-[50%] py-3">Close</button>
+                    <button class="bg-orange-400  w-[50%] py-3">Checkout</button>
+             </div>
+                  
+                
+            </div>
+            </div>
         </div>
     </div>
   </section>
+  <script src="./js/script.js"></script>
+  <script src="./js/product.js"></script>
+
 </body>
 </html>
+
+
+<!-- 
+<div class="sm:basis-full md:basis-4/12 lg:basis-3/12  p-3">
+    <div class="shadow-lg flex justify-center items-center cursor-pointer py-5 flex-col gap-3 rounded-lg bg-gray-200">
+        <img class="h-[150px]" src="https://www.freeiconspng.com/thumbs/chair-png/aesthetic-chair-png-5.png" alt="">
+        <h4 class="text-xl">Lounge chair</h4>
+        <p class="font-semibold text-xl tracking-widest">$ 200</p>
+        <button class="bg-black mt-2 text-white px-4 py-1 cursor-pointer rounded-md">Add To Cart</button>
+    </div>
+</div>
+<div class="sm:basis-full md:basis-4/12 lg:basis-3/12  p-3">
+    <div class="shadow-lg flex justify-center items-center cursor-pointer py-5 flex-col gap-3 rounded-lg bg-gray-200">
+        <img class="h-[150px]" src="https://www.freeiconspng.com/thumbs/chair-png/aesthetic-chair-png-5.png" alt="">
+        <h4 class="text-xl">Lounge chair</h4>
+        <p class="font-semibold text-xl tracking-widest">$ 200</p>
+        <button class="bg-black mt-2 text-white px-4 py-1 cursor-pointer rounded-md">Add To Cart</button>
+    </div>
+</div>
+<div class=" sm:basis-full md:basis-4/12 lg:basis-3/12  p-3">
+    <div class="shadow-lg flex justify-center items-center cursor-pointer py-5 flex-col gap-3 rounded-lg bg-gray-200">
+        <img class="h-[150px]" src="https://www.freeiconspng.com/thumbs/chair-png/aesthetic-chair-png-5.png" alt="">
+        <h4 class="text-xl">Lounge chair</h4>
+        <p class="font-semibold text-xl tracking-widest">$ 200</p>
+        <button class="bg-black mt-2 text-white px-4 py-1 cursor-pointer rounded-md">Add To Cart</button>
+    </div>
+</div>
+<div class=" sm:basis-full md:basis-4/12 lg:basis-3/12  p-3">
+    <div class="shadow-lg flex justify-center items-center cursor-pointer py-5 flex-col gap-3 rounded-lg bg-gray-200">
+        <img class="h-[150px]" src="https://www.freeiconspng.com/thumbs/chair-png/aesthetic-chair-png-5.png" alt="">
+        <h4 class="text-xl">Lounge chair</h4>
+        <p class="font-semibold text-xl tracking-widest">$ 200</p>
+        <button class="bg-black mt-2 text-white px-4 py-1 cursor-pointer rounded-md">Add To Cart</button>
+    </div>
+</div>
+<div class=" sm:basis-full md:basis-4/12 lg:basis-3/12 p-3">
+    <div class="shadow-lg flex justify-center items-center cursor-pointer py-5 flex-col gap-3 rounded-lg bg-gray-200">
+        <img class="h-[150px]" src="https://www.freeiconspng.com/thumbs/chair-png/aesthetic-chair-png-5.png" alt="">
+        <h4 class="text-xl">Lounge chair</h4>
+        <p class="font-semibold text-xl tracking-widest">$ 200</p>
+        <button class="bg-black mt-2 text-white px-4 py-1 cursor-pointer rounded-md">Add To Cart</button>
+    </div>
+</div>
+<div class="sm:basis-full md:basis-4/12 lg:basis-3/12  p-3">
+    <div class="shadow-lg flex justify-center items-center cursor-pointer py-5 flex-col gap-3 rounded-lg bg-gray-200">
+        <img class="h-[150px]" src="https://www.freeiconspng.com/thumbs/chair-png/aesthetic-chair-png-5.png" alt="">
+        <h4 class="text-xl">Lounge chair</h4>
+        <p class="font-semibold text-xl tracking-widest">$ 200</p>
+        <button class="bg-black mt-2 text-white px-4 py-1 cursor-pointer rounded-md">Add To Cart</button>
+    </div>
+</div>
+<div class="sm:basis-full md:basis-4/12 lg:basis-3/12  p-3">
+    <div class="shadow-lg flex justify-center items-center cursor-pointer py-5 flex-col gap-3 rounded-lg bg-gray-200">
+        <img class="h-[150px]" src="https://www.freeiconspng.com/thumbs/chair-png/aesthetic-chair-png-5.png" alt="">
+        <h4 class="text-xl">Lounge chair</h4>
+        <p class="font-semibold text-xl tracking-widest">$ 200</p>
+        <button class="bg-black mt-2 text-white px-4 py-1 cursor-pointer rounded-md">Add To Cart</button>
+    </div>
+</div>
+<div class=" sm:basis-full md:basis-4/12 lg:basis-3/12  p-3">
+    <div class="shadow-lg flex justify-center items-center cursor-pointer py-5 flex-col gap-3 rounded-lg bg-gray-200">
+        <img class="h-[150px]" src="https://www.freeiconspng.com/thumbs/chair-png/aesthetic-chair-png-5.png" alt="">
+        <h4 class="text-xl">Lounge chair</h4>
+        <p class="font-semibold text-xl tracking-widest">$ 200</p>
+        <button class="bg-black mt-2 text-white px-4 py-1 cursor-pointer rounded-md">Add To Cart</button>
+    </div>
+</div> -->
