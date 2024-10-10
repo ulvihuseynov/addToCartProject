@@ -42,9 +42,10 @@ document.querySelector("#productCount").textContent=cart.length;
 
 
 const getProduct=async ()=>{
-    const res=(await fetch('https://fakestoreapi.com/products')).json()
-    const data=await res
-    // console.log(data)
+    const res=(await fetch('https://fakestoreapi.com/products'))
+    // console.log(res)
+    const data=await res.json()
+    console.log(data)
  
     
   const products=  data.map((item,index)=>{
