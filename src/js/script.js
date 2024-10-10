@@ -1,4 +1,4 @@
-const basket=document.querySelector("#basket")
+const basket=document.querySelector("#basketClick")
 
 const getShoppingCart=()=>{
     const shoppingCard=document.querySelector("#shoppingCard")

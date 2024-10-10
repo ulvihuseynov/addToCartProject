@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+  
+.productCard{
+    @apply sm:basis-full md:basis-4/12 lg:basis-3/12  p-3;
+    
+}
+.selectProduct{
+    @apply flex items-center justify-between
+}
